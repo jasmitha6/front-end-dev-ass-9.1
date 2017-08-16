@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Popover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		/*styles for the buttons*/
+button{
+    
+    margin-top: 100px;
+    }
+    
+.first{
+    
+    margin-left: 220px;
+    }
+    
+    
+.popover{
+    
+    
+box-shadow: 5px 5px 5px cyan;
+    
+    }
+    
+   .popover-title{
+       
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+        
+       }
+        .popover-content{
+       
+        color: paleturquoise;
+    background-color:azure;
+    text-align: center;
+        
+       }
+       
+       .btn{
+           
+           width: 200px;
+           height: 100px;
+           
+           }
+       
+       
+	
+	</style>
+</head>
+<body>
+	<!--body of the buttons in html-->
+
+<div class="container">
+	
+  <h3>Popover Example</h3>
+	<div class="row">
+  
+  <button  class="btn btn-default btn-danger" title="Header" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Some content"> First pop over</buuton>
+  <button  class="btn btn-default  btn-danger"  title="Header" data-toggle="popover"  data-placement="top" data-trigger="hover" data-content="another popover">Another pop over</buuton>
+  <button class="btn btn-default btn-danger" title="Header" data-toggle="popover"  data-placement="top"  data-trigger="hover" data-content="larger popover with some defined text"> Large pop over</buuton>
+  <button class="btn btn-default btn-danger"  title="Header" data-toggle="popover"  data-placement="top" data-trigger="hover" data-content="The last popover"> Last pop over</buuton>
+</div>
+</div>
+	<!--jquery to popover the content-->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+</body>
+</html>
